@@ -1,9 +1,10 @@
 import React from 'react';
+import Banner from '../../components/cards/Banner';
 
 function Main(props) {
     return (
         <div>
-            Main
+            <Banner />
         </div>
     );
 }

@@ -1801,7 +1801,6 @@ background-image: url("data:image/svg+xml,%3Csvg id='svg2' xmlns='http://www.w3.
 }
 
 .ochart{border-radius: 3rem;padding:6rem 12rem;background-color:#F6F8FB;text-align: center;position: relative;}
-.ochart .jc_line{}
 .ochart .top{padding-bottom:3rem;position: relative;}
 .ochart .top:before{content:"";position: absolute;z-index: 1;;left:50%;top:0;margin-left:-0.1px;width:2px;background-color: #C6D7E4;height:100%;}
 .ochart .top .item{margin-left:auto;margin-right:auto;}
@@ -1887,4 +1886,62 @@ background-image: url("data:image/svg+xml,%3Csvg id='svg2' xmlns='http://www.w3.
     .ochart_cate_list .item .icon img{width:3rem;}
     .ochart_cate_list .item .tit{font-size:1.5rem;margin-top:1rem;}
     .ochart_cate_list .item .cnt{font-size:1.3rem;}
+}
+.common_wrapper {padding: 30px 20px; box-shadow: 0px 0px 20px rgba(67, 72, 89, 0.2);background-color: #fff; border-radius: 12px; border: 0.5px solid #9AD255;}
+.profile_wrapper {min-width: 280px; min-height: 200px;}
+.profile_wrapper .main_profile {display: flex; align-items: center; gap: 20px; padding: 0 10px;}
+.profile_wrapper .main_profile .img_wrapper {padding: 5px; background-color: #e4e4e4; min-width: 50px; max-width: 50px; min-height: 50px; max-height: 50px; border-radius: 50%; overflow: hidden;}
+.profile_wrapper .main_profile .img_wrapper img {width: 100%; height: 100%; object-fit: contain;}
+.profile_wrapper .main_profile .nickname {font-size: 16px; font-weight: 600; color: #333;}
+.lg_btn {width: 100%; display: block; margin-top: 20px; padding: 12px 0px 8px; font-size: 14px; font-weight: 700; color: #fff; background-color: #9AD255; border: none; border-radius: 4px;}
+.out_btn {border: none; background-color: unset; text-align: right; width: 100%; padding-right: 6px; margin-top: 10px; color: #999; font-size: 12px; font-weight: 600;}
+.out_btn:hover {color: #9AD255;}
+.category_wrapper {min-height: calc(100vh - 500px); margin-top: 20px;}
+.category_wrapper .categorys {padding: 0 8px;}
+
+.tree > ul {
+  padding: 10px 0;
+  list-style:none;
+  color:#369;
+  position:relative;
+}
+
+.tree ul li ul {margin-left:.5em; position: relative;} /* (indentation/2) */
+
+.tree ul li ul:before {
+  content:"";
+  display:block;
+  width:0;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  border-left:1px solid;
+}
+
+.tree li {
+  margin:0;
+  padding:0 1.5em; /* indentation + .5em */
+  line-height:2em; /* default list item's `line-height` */
+  font-weight:bold;
+  position:relative;
+}
+
+.tree ul li ul li:before {
+  content:"";
+  display:block;
+  width:10px; /* same with indentation */
+  height:0;
+  border-top:1px solid;
+  margin-top:-1px; /* border top width */
+  position:absolute;
+  top:1em; /* (line-height/2) */
+  left:0;
+}
+
+.tree li:last-child:before {
+  background:white; /* same with body background */
+  height:auto;
+  top:1em; /* (line-height/2) */
+  bottom:0;
 }
